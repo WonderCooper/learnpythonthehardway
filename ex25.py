@@ -5,15 +5,15 @@ def break_words(stuff):
 
 def sort_words(words):
     """Sorts the words."""
-    return sortsed(words)
+    return sorted(words)
 
 def print_first_word(words):
-    """Prints the first word after poping it off."""
+    """Prints the first word after popping it off."""
     word = words.pop(0)
     print word
 
 def print_last_word(words):
-    """Prints the Last word after popping it off."""
+    """Prints the last word after popping it off."""
     word = words.pop(-1)
     print word
 
