@@ -11,4 +11,16 @@ class Game(object):
              "I have a small puppy that's better at this."
         ]
         self.start = start
-        
+
+        while True:
+            print "\n--------"
+            room = getattr(self, next)
+            next = room()
+
+
+    def death(self):
+        print self.quips[randint(0, len(self.quips)-1)]
+        exit(1)
+
+    def central_corridor(self):
+        print "The Gothons of Planet Percal #25 have invaded your ship and destroyed"
